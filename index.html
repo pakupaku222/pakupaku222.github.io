@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私の初めてのWebサイト</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #f0f5ff;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: #3455a4;
+        }
+
+        button {
+            background-color: #3455a4;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            cursor: pointer;
+        }
+
+        #message {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>こんにちは！</h1>
+    <p>これは私が初めて作ったWebサイトです。</p>
+
+    <button onclick="showMessage()">クリックしてね！</button>
+
+    <p id="message"></p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "ボタンが押されました！";
+        }
+    </script>
+
+</body>
+</html>
